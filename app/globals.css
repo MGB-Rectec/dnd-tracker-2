@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@500&display=swap");
+
+:root {
+  --ink: #19140f;
+  --parchment: #ece0c4;
+  --parchment-dim: #d9c89f;
+  --ember: #c1502e;
+  --ember-bright: #e07a3f;
+  --moss: #5c7a52;
+  --blood: #8a2c2c;
+  --gold: #b88a3e;
+  --panel: #241c14;
+  --panel-raised: #2e251a;
+  --border: #4a3a26;
+
+  --font-display: "Cinzel", serif;
+  --font-body: "Crimson Pro", serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at top, #2a2018 0%, var(--ink) 55%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.15) 0px,
+      rgba(0, 0, 0, 0.15) 2px,
+      transparent 2px,
+      transparent 4px
+    );
+  background-attachment: fixed;
+  color: var(--parchment);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--ember);
+  color: var(--ink);
+}
+
+/* Scrollbar discreto */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 6px;
+}
